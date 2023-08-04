@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+   
+    position: relative;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+    border-bottom: 1px solid #dadada
+   
+}
+.nav h2:hover{
+    cursor: pointer;
+    color: lightseagreen;
+}
+.nav h4:hover{
+    cursor: pointer;
+    color: lightseagreen;
+    border-bottom: 1px solid lightseagreen;
+}
+.nav_part2{
+    display: flex;
+    align-items: center;
+  
+   gap:4vw;
+}
+.nav_part2 button{
+    font-size: 1.5vw;
+    padding: 1vw 1vw;
+    color: #3ae4db;
+    background: #fff;
+    border-radius: 5px;
+    border:2px solid #3ae4db ;
+    font-size: 500;
+}
+.nav_part2 button:hover{
+    font-size: 1.5vw;
+    padding: 1vw 1vw;
+    color: black;
+    background: #fff;
+    border-radius: 5px;
+    border:2px solid black;
+    font-size: 500;
+}
+.nav_part2 h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav h4{
+    font-size: 1.2vw;
+}
+.nav i{
+    font-size: 2vw;
+    display: none;
+}
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+   
+    display: flex;
+}
+.left{
+    width:60%;
+    height: 100%;
+   
+    padding: 5vw 8vw;
+    
+}
+.right{
+    width:40%;
+    height: 100%;
+   
+}
+.left h1{
+    font-size: 4vw;
+}
+.left h1 span{
+    color: lightseagreen;
+}
+.left p{
+    font-size: 1.2vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #666;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+}    
+.content button{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 700;
+    
+} 
+.content button:hover{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color:white;
+    color:black;
+    border-radius: 5px;
+    font-size: 700;
+   
+} 
+.right img{
+     height: 100%;
+     width: 80%;
+     border-radius: 50%;
+} 
+.nav_part2_mob{
+    display: none;
+}
+@media (max-width:600px){
+        .nav{
+            height: 60px;
+             background-color: lightseagreen;
+             color: #fff;
+             padding: 0 5vw;
+        }
+        .nav h2{
+            font-size: 6vw;
+        }
+        .nav h2:hover{
+            cursor: pointer;
+            color: black;
+        }
+        .nav h4{
+            display: none;
+        }
+        .nav i{
+            font-size: 6vw;
+            display: block;
+        }
+        .nav i:hover{
+           color: black;
+            
+        }
+        .nav_part2 button{
+            display: none;
+        }
+        .content{
+            height: calc(100% - 60px);
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .left{
+          padding-top: 20px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .left h1{
+          font-size: 5vw;
+        }
+        .left p{
+          font-size: 3vw;
+        }
+        .left button{
+            font-size: 3vw;
+            padding: 1vw 2vw;
+            background-color: lightseagreen;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 700;
+        }
+        .right{
+          padding-top: 30px;
+          width: 50%;
+        }
+        .nav_part2_mob{
+            top: 0px;
+            display: none;
+            position: absolute;
+            width: 100vw;
+            background:lightseagreen;
+            height: 100vh;
+          color: aliceblue;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            
+
+            
+        }
+        .nav_part2_mob i{
+            align-self: flex-end;
+            padding-right: 50px;
+            font-size: 5vw;
+        }
+        .nav_part2_mob h4,i{
+            cursor: pointer;
+        }
+        .nav_part2_mob h4:hover{
+           color: black;
+        }
+        .nav_part2_mob i:hover{
+           color: black;
+        }
+
+}
